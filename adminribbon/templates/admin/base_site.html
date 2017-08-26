@@ -1,0 +1,28 @@
+{% extends "admin/base_site.html" %}
+
+{% block extrastyle %}
+
+<style type="text/css">
+    body:before {
+        width: 200px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        display: block;
+        top: auto;
+        left: auto;
+        right: -50px;
+        bottom: 25px;
+        transform: rotate(-45deg);
+
+        line-height: 35px;
+        text-align: center;
+        color: white;
+
+        content: "{{ ADMIN_RIBBON_TEXT }}";
+        background-color: {{ ADMIN_RIBBON_COLOR }};
+    }
+</style>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+sudo: false
+language: python
+matrix:
+  include:
+  - python: '3.5'
+    env: TOXENV=py35-django111-flake
+install:
+- pip install tox
+script:
+- tox
+deploy:
+  provider: pypi
+  user: skioo
+  password:
+    secure: mGqHmR7lP8qtS8hG9Evobsrvgon8S5Xed2EmFfonaAJok0p5Gw8nVym+g8AVy7yA/hTbApOecM0DEX4JkUNoP77j1/kucs1O01sYqeYG+plK89cOCyW+hV2jN8i6RralIJrls8UFxIZtG2FvJaRosGXol+NeCoEf364iDKPpMdTFx7n/ZueWf/UxKZ56QZjHJdPNHmA5GyrjMQY96eOnEmoZV7HUH4GLT91UzJlAyz1ODjlLJlPLXqNKSm9/EPMP1kBwxjAKdzettOgqQPgHidXrYrMxfjd6qgBDBZpuR826psJR55k9HjkzeQ0OWeYJTGPbLg9SNrvcss3zoGvlPpfoZfCpvQNRNTdzmgHWFO5yG7L7ZVIiBcVtXqB3GniHQtvcOftlrgZ229zg7ZonYRWhfEKzQGegOjN9gW003lTKHTc62BM3Ay8H4V0GuD5SnDjpQgkQx18Ry8rXOew+j+qWCd9PW/wpfR+rhUCAJj8Uh5DbRBwLDhDjfN+0zgsYOs0SGO2bsnUCdBveXCfcPl7z5KIQaTwiwapUt/jpRAqYvY485VmG1gHROMm8Ft487gUiWRdcq0u6rrjbSXtUQXfLWrnwHG/vSvAxT8mjNllMvYMjdl3Kao0jkGd83vthHCC0qNljnKY+BK20Hu/ZdvS8IN6Lgi5ksfi6s04kXNM=
+  distribution: sdist bdist_wheel
+  on:
+    tags: true
