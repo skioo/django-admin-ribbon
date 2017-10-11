@@ -19,7 +19,7 @@ setup(
         'templates/admin/base_site.html',
     ]},
     install_requires=[
-        'Django>=1.7',
+        'Django>=1.8',
     ],
     license=adminribbon.__licence__,
     classifiers=[
@@ -30,6 +30,5 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3.5',
     ],
 )
