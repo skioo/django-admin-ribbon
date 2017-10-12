@@ -4,7 +4,7 @@ django-admin-ribbon
 [![Build Status](https://travis-ci.org/skioo/django-admin-ribbon.svg?branch=master)](https://travis-ci.org/skioo/django-admin-ribbon)
 [![PyPI version](https://badge.fury.io/py/django-admin-ribbon.svg)](https://badge.fury.io/py/django-admin-ribbon)
 [![Requirements Status](https://requires.io/github/skioo/django-admin-ribbon/requirements.svg?branch=master)](https://requires.io/github/skioo/django-admin-ribbon/requirements/?branch=master)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Overlays a configurable ribbon across the admin-ui, in order to differentiate between environments.
 
