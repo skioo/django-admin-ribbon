@@ -15,7 +15,7 @@ For example:
 Requirements
 ------------
 
-* Python: any version
+* Python: Any version
 * Django: 1.8 and over
 
 Setup
