@@ -2,8 +2,8 @@ sudo: false
 language: python
 matrix:
   include:
-  - python: '3.6'
-    env: TOXENV=py36-django21-flake
+  - python: '3.8'
+    env: TOXENV=py38-django31-flake
 install:
 - pip install tox
 script:
